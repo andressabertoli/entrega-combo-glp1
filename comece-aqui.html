@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comece Aqui — Desmame GLP-1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--taupe:#8B7355;--sand:#C4A882;--dark:#3A2F24;--cream:#FAF7F2;--light:#E8DDD0;--accent:#B8956A;--green:#6B8F71}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--dark)}
+    .hero{background:linear-gradient(160deg,var(--dark) 0%,#5C4A35 100%);color:white;text-align:center;padding:56px 24px 72px;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:280px;height:280px;border-radius:50%;background:rgba(196,168,130,.1)}
+    .hero-badge{display:inline-block;background:rgba(196,168,130,.25);border:1px solid rgba(196,168,130,.4);color:var(--sand);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:20px}
+    .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,6vw,44px);font-weight:600;line-height:1.2;margin-bottom:12px}
+    .hero h1 span{color:var(--sand)}
+    .hero p{font-size:15px;color:rgba(255,255,255,.78);max-width:460px;margin:0 auto;line-height:1.7}
+    svg.wave{display:block;margin-top:-2px;background:var(--dark)}
+    .main{max-width:680px;margin:0 auto;padding:40px 20px 72px}
+    .card{background:white;border-radius:16px;padding:24px;margin-bottom:20px;border:1.5px solid var(--light);box-shadow:0 2px 8px rgba(58,47,36,.05)}
+    .card-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--dark);margin-bottom:16px;padding-bottom:12px;border-bottom:1.5px solid var(--light)}
+    .card p{font-size:14px;line-height:1.75;color:#5A4E44;margin-bottom:10px}
+    .card p:last-child{margin-bottom:0}
+    .card ul{padding-left:20px;margin-top:8px}
+    .card ul li{font-size:14px;line-height:1.75;color:#5A4E44;margin-bottom:4px}
+    .highlight{background:linear-gradient(135deg,#FFF8F0 0%,#FDF3E8 100%);border-left:4px solid var(--sand);border-radius:0 12px 12px 0;padding:16px 20px;margin:16px 0}
+    .highlight p{color:var(--dark);font-size:14px;line-height:1.75;margin:0}
+    .step-list{list-style:none;padding:0;margin:0}
+    .step-list li{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+    .step-list li:last-child{margin-bottom:0}
+    .step-num{width:28px;height:28px;background:var(--sand);color:var(--dark);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:1px}
+    .step-text{font-size:14px;line-height:1.7;color:#5A4E44}
+    .step-text strong{color:var(--dark)}
+    .check-list{list-style:none;padding:0}
+    .check-list li{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px;font-size:14px;line-height:1.6;color:#5A4E44}
+    .check-list li::before{content:'✓';color:var(--green);font-weight:700;font-size:15px;flex-shrink:0;margin-top:1px}
+    .quote-card{background:linear-gradient(135deg,var(--dark) 0%,#5C4A35 100%);border-radius:16px;padding:28px;margin-bottom:20px;text-align:center;color:white}
+    .quote-card blockquote{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;line-height:1.5;color:rgba(255,255,255,.9);margin-bottom:8px}
+    .quote-card cite{font-size:13px;color:var(--sand)}
+    .warn{background:#FFFBEB;border:1.5px solid #FCD34D;border-radius:12px;padding:16px 20px;margin:16px 0}
+    .warn p{font-size:13px;color:#78350F;line-height:1.65;margin:0}
+    .tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:.72rem;font-weight:600;margin:2px}
+    .back-btn{display:inline-flex;align-items:center;gap:8px;color:var(--taupe);font-size:14px;font-weight:500;text-decoration:none;margin-bottom:24px;padding:8px 0}
+    .back-btn:hover{color:var(--dark)}
+    footer{text-align:center;padding:24px;font-size:13px;color:#A89880;border-top:1px solid var(--light)}
+    footer strong{color:var(--taupe)}
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-badge">Guia de Início</div>
+  <h1>⭐ Comece Aqui<br/><span>Desmame do GLP-1</span></h1>
+  <p>Tudo que você precisa saber antes de dar o primeiro passo. Leia com calma — esse guia vai mudar sua relação com o processo.</p>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 40L60 35C120 30 240 20 360 15C480 10 600 10 720 14C840 18 960 24 1080 26C1200 28 1320 24 1380 22L1440 20V0H0V40Z" fill="#3A2F24"/>
+</svg>
+
+<main class="main">
+  <a href="index.html" class="back-btn">← Voltar para seus materiais</a>
+
+  <!-- BEM-VINDA -->
+  <div class="quote-card">
+    <blockquote>"O desmame do GLP-1 não precisa ser caótico."</blockquote>
+    <cite>— Andressa Bertoli, Nutricionista</cite>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💛 Bem-vinda</div>
+    <p>Se você chegou até aqui, provavelmente existe um medo aí dentro:</p>
+    <div class="highlight">
+      <p>"E se eu inflamar e recuperar tudo?"<br/>
+      "E se a fome voltar?"<br/>
+      "E se eu perder o controle?"</p>
+    </div>
+    <p>E eu quero que você saiba uma coisa: <strong>o desmame do GLP-1 não precisa ser caótico.</strong></p>
+    <p>O problema nunca foi apenas emagrecer e desinflamar. O verdadeiro desafio é <strong>ensinar o corpo a funcionar sem depender exclusivamente da medicação.</strong></p>
+    <p>Foi exatamente por isso que eu criei este material — com tudo que aprendi atendendo mulheres com lipedema e acompanhando o desmame do GLP-1 de perto.</p>
+  </div>
+
+  <!-- O QUE VOCÊ VAI ENCONTRAR -->
+  <div class="card">
+    <div class="card-title">📦 O que está incluído no seu Combo</div>
+    <ul class="check-list">
+      <li><strong>Receitas funcionais</strong> — cada uma com propósito: anti-inflamatória, drenante, anti-fibrose, saciedante</li>
+      <li><strong>Guia de Chás e Especiarias</strong> — 8 chás estratégicos para lipedema + 6 temperos anti-inflamatórios</li>
+      <li><strong>Guia de Suplementação</strong> — protocolo em 3 fases para o desmame com lipedema</li>
+      <li><strong>App Tracker</strong> — acompanhamento diário de peso, medidas, sintomas e humor</li>
+      <li><strong>Próximos Passos</strong> — roteiro semana a semana para o desmame com segurança</li>
+    </ul>
+  </div>
+
+  <!-- COMO USAR -->
+  <div class="card">
+    <div class="card-title">✅ Como usar este material</div>
+    <p style="margin-bottom:16px">Siga essa ordem para aproveitar ao máximo:</p>
+    <ul class="step-list">
+      <li><div class="step-num">1</div><div class="step-text"><strong>Leia este guia completo</strong> — entenda a lógica do protocolo antes de começar a agir</div></li>
+      <li><div class="step-num">2</div><div class="step-text"><strong>Escolha seus 2 chás favoritos</strong> do Guia de Chás — comece com só dois para não sobrecarregar a rotina</div></li>
+      <li><div class="step-num">3</div><div class="step-text"><strong>Organize a suplementação</strong> pela Fase 1 do Guia de Suplementos — só o essencial no início</div></li>
+      <li><div class="step-num">4</div><div class="step-text"><strong>Configure o App Tracker</strong> — preencha seus dados iniciais (peso, medidas, informações pessoais)</div></li>
+      <li><div class="step-num">5</div><div class="step-text"><strong>Preencha o Tracker diariamente</strong> — nem que seja só o peso e o humor do dia</div></li>
+      <li><div class="step-num">6</div><div class="step-text"><strong>Revise os sintomas semanalmente</strong> — o gráfico do dashboard vai te mostrar seus padrões</div></li>
+    </ul>
+    <div class="highlight">
+      <p>💡 <strong>Pequenas ações repetidas geram grandes mudanças metabólicas.</strong> Você não precisa fazer tudo perfeito — precisa fazer consistentemente.</p>
+    </div>
+  </div>
+
+  <!-- MONTE REFEIÇÕES ANTI-COMPULSÃO -->
+  <div class="card">
+    <div class="card-title">🍽️ Monte refeições anti-compulsão</div>
+    <p>O objetivo agora <strong>não é restrição extrema. É estabilidade.</strong></p>
+    <p>Priorize sempre esses 5 pilares em cada refeição:</p>
+    <ul class="check-list">
+      <li><strong>Proteína</strong> — sustenta a saciedade real, preserva músculo, estimula GLP-1 natural</li>
+      <li><strong>Fibras</strong> — retardam digestão, alimentam microbiota, reduzem pico glicêmico</li>
+      <li><strong>Gordura boa</strong> — controla hormônios, melhora circulação linfática, anti-inflamatória</li>
+      <li><strong>Volume alimentar</strong> — satisfação visual e gástrica sem excesso calórico</li>
+      <li><strong>Alimentos anti-inflamatórios</strong> — cúrcuma, gengibre, alho em todas as refeições</li>
+    </ul>
+    <p style="margin-top:12px">As receitas do material foram pensadas exatamente para isso: <strong>mais saciedade, menos compulsão, desinflamação e estabilidade metabólica.</strong></p>
+  </div>
+
+  <!-- O TRACKER -->
+  <div class="card">
+    <div class="card-title">📱 Use o Tracker diariamente</div>
+    <p>Ele é uma ferramenta <strong>MUITO PODEROSA de consciência metabólica ✨</strong></p>
+    <p style="margin-top:8px">O acompanhamento visual ajuda você a perceber:</p>
+    <ul class="check-list">
+      <li>Padrões de fome e inflamação (em que dias você fica mais inflamada?)</li>
+      <li>Retenção hídrica (relação com alimentos, ciclo hormonal, estresse)</li>
+      <li>Episódios de compulsão (gatilhos emocionais ou alimentares)</li>
+      <li>Nível de energia ao longo da semana</li>
+      <li>Sintomas inflamatórios do lipedema (dor, inchaço, sensibilidade)</li>
+      <li>Evolução real das medidas — não só do peso</li>
+    </ul>
+    <div class="warn">
+      <p>⚠️ <strong>O tracker é uma ferramenta de consciência — não de culpa.</strong> Se você não preencheu um dia, não tem problema. O importante é retomar.</p>
+    </div>
+  </div>
+
+  <!-- AVISO IMPORTANTE -->
+  <div class="card">
+    <div class="card-title">⚕️ Importante</div>
+    <p>Este material é educativo e <strong>não substitui acompanhamento individualizado.</strong></p>
+    <p>Cada organismo responde de forma diferente ao desmame do GLP-1, especialmente em casos de:</p>
+    <ul class="check-list">
+      <li>Lipedema</li>
+      <li>Resistência à insulina</li>
+      <li>Compulsão alimentar</li>
+      <li>Alterações hormonais</li>
+      <li>Inflamação crônica</li>
+    </ul>
+    <p style="margin-top:12px">Se você deseja aprofundar sua estratégia nutricional de forma individualizada, <strong>continue sua transformação com meus cuidados.</strong></p>
+    <div class="highlight">
+      <p>📲 WhatsApp: <a href="https://wa.me/5542998048864" style="color:var(--taupe);font-weight:600">(42) 99804-8864</a><br/>
+      📸 Instagram: <strong>@lipedemanutricionista</strong><br/>
+      🌐 Site: <strong>www.lipedemanutricionista.com.br</strong></p>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:32px">
+    <a href="proximos-passos.html" style="display:inline-block;background:var(--dark);color:white;font-weight:600;font-size:15px;padding:14px 32px;border-radius:50px;text-decoration:none">
+      Próximos Passos →
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <strong>Andressa Bertoli</strong> · Nutricionista CRN 810635<br/>
+  Combo GLP-1 + Lipedema — Material Digital
+</footer>
+
+</body>
+</html>
