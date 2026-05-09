@@ -47,6 +47,12 @@
   </style>
 </head>
 <body>
+<script>
+  if (sessionStorage.getItem("glp_acesso") !== "ok") {
+    document.documentElement.style.display = "none";
+    window.location.replace("acesso-negado.html");
+  }
+</script>
 
 <section class="hero">
   <div class="hero-badge">Guia de Início</div>
