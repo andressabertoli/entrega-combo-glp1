@@ -302,6 +302,20 @@
 </head>
 <body>
 
+<script>
+  (function() {
+    var CODIGO = "glp2024";
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("acesso") === CODIGO) {
+      sessionStorage.setItem("glp_acesso", "ok");
+    }
+    if (sessionStorage.getItem("glp_acesso") !== "ok") {
+      document.documentElement.style.display = "none";
+      window.location.replace("acesso-negado.html");
+    }
+  })();
+</script>
+
 <!-- HERO -->
 <section class="hero">
   <div class="check-icon">✓</div>
